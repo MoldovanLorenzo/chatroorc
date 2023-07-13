@@ -1,0 +1,79 @@
+.PatratSingup
+{
+    width: 1200px;
+    height: 800px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 3px 3px black;
+}     
+.UssernameParola,
+.NicknamePoza {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.Ussername,
+.Parola,
+.Nickname,
+.Poza {
+  width: 100%;
+}
+
+.Parola,
+.Poza {
+  margin-top: auto;
+}
+.Ussername,
+.Parola,
+.Nickname,
+.Poza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ussername form,
+.Parola form,
+.Nickname form,
+.Poza form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Ussername input,
+.Parola input,
+.Nickname input,
+.Poza input {
+  width: 80%;
+  padding: 8px;
+  border-color: transparent;
+  font-family: "Comic Sans MS", cursive;
+}
+.ButonoSingup
+{
+    height: 40px;
+    width: 150px;
+    background-color:#d4efea;
+    border: 2px solid transparent;
+    position: relative;
+    left: 560px;
+    top:300px;
+    font-family: "Comic Sans MS", cursive;
+    border-radius: 20px;
+    
+    
+}
+
+
+      
+      

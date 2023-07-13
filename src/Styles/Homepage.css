@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(110deg,#688491 60%,#aaffec 60%);
+  }
+  
+  .PatratHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    position: relative;
+    left: 200px;
+  }
+  
+  .ParteaStanga {
+    width: 30%;
+    background-color: white;
+  }
+  
+  .ParteaDreapta {
+    width: 70%;
+    background-color: #f6fffe;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .ParteaStanga {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 600px;
+  }
+  
+  .ParteaStanga h1,
+  .ParteaStanga form,
+  .ParteaStanga button {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  #buton1
+  {
+    width: 100px;
+    background-color:  #d4efea;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+  }
+  #buton2
+  {
+    width: 100px;
+    background-color: transparent;
+    border: transparent;
+  }
+  form {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 400px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    width: 100%;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.2s;
+  }
+  
+  .form-group input:focus ~ label,
+  .form-group input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #666;
+    width: 100%;
+  }
+  .form-group input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    width: 100%;
+  }
+  
+  .ParteaStanga h1
+  {
+    position: relative;
+    left: 200px;
+  }
+  .ParteaStanga h1,
+.ParteaStanga form,
+.ParteaStanga button
+ {
+  width: 100%;
+  margin-bottom: 70px;
+  font-family: "Comic Sans MS", cursive;
+}
+.h2nume
+{
+  font-size:smaller;
+  font-family: "Comic Sans MS", cursive;
+}

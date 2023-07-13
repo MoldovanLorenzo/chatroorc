@@ -1,0 +1,291 @@
+.Patratchat
+{
+    height: 700px;
+    width: 700px;
+    border: 2px solid transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+  
+  .TextNumePoza {
+    flex-grow: 1;
+    margin-bottom: 10px; 
+  }
+  
+  .Formchat {
+    width: 97%;
+    justify-content: center;
+    justify-items: center;
+    border: transparent;
+  }
+  #input-text
+  {
+    width: 100%;
+   height: 50px;
+   left: 18px;
+   position: relative;
+   border: 0,5px solid transparent ;
+   padding-left: 3px;
+   bottom: 4px;
+
+  }
+  .TextNumePoza
+  {
+    border: 1px solid transparent;
+    margin: 2px;
+    width: 93%;
+    position: relative;
+    left: 15px;
+    padding: 20px;
+    background-color:  #d2dade;
+    overflow: scroll;
+    overflow:auto
+  }
+  .Patratchat {
+    height: 950px;
+    width: 800px;
+    border: 2px solid transparent;
+    display: flex;
+  }
+  
+  .DivStanga {
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 50px;
+    float: left; 
+  }
+  
+  .DivDreapta {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .DivNickname,
+  .DivMesaj {
+    width: 650px;
+    height: 32px;
+    border: 2px solid black;
+    clear: both; 
+  }
+  
+  .PatratTot {
+    display: flex;
+  }
+  
+  .UseriIntrati {
+    width: 300px;
+    height: 922px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .PatratRoomuridisponibile
+  {
+    height: 922px;
+    width: 300px;
+    background-color: #92a6b0;
+    border: 1px solid transparent;
+    position: relative;
+    top: 4px;
+    left: 20px;
+  }
+
+  .ProfilButon
+  {
+    height: 130px;
+    border: 1px solid #92a6b0;
+    display: flex;
+  }
+  .UseriOnline
+  {
+    flex-grow: 1;
+    background-color: #92a6b0;
+    border: 1px solid #92a6b0;
+  }
+  .Profil
+  {
+    width: 70%;
+    background-color: #688491;
+    border: 2px solid #688491;
+    display: flex;
+  }
+  .SetareProfil
+  {
+    flex-grow: 1;
+    border: 2px solid transparent;
+    justify-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: #546a74;
+
+  }
+  .Butonas
+  {
+    background-image: url('../Assets/ButonSetari.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:contain;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+
+  }
+  .PozaProfil
+  {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    position: relative;
+    top: 25%;
+    left: 20px;
+  }
+  .NumeProfil
+  {
+    height: 50px;
+    width: 100px;
+    border: 2px solid transparent;
+    position:relative;
+    top: 25%;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .NicknameProfil
+  {
+    width: 98%;
+    height: 25px;
+    border: 2px solid transparent;
+    color: white;
+    font-family: 'Super Foods', sans-serif;
+                                                
+
+    
+  }
+  .DivUssername
+  {
+    flex-grow: 1;
+    border: 2px solid transparent;
+    color:dimgrey;
+    opacity:inherit;
+    font-family: 'Super Foods', sans-serif;
+                                                
+                                                
+  }
+  .UseriOnline
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .BaraScris
+  {
+border: 2px solid transparent;
+padding-left: 30%;
+font-family: 'Super Foods', sans-serif;
+color: #546a74;
+margin: 10px;
+  }
+  .Usser1
+  {
+    border: 2px solid transparent;
+    margin: 10px;
+    padding-left: 20px;
+    height: 20px;
+    font-family: 'Super Foods', sans-serif;
+    display: flex;
+  }
+  .Usser2
+  {
+    border: 2px solid transparent;
+    margin: 10px;
+    padding-left: 20px; 
+    height: 20px;
+    font-family: 'Super Foods', sans-serif;
+  }
+  .Status
+  {
+    border: 2px solid transparent;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 90px;
+    top: 4px;
+    border-radius: 10px;
+    font-family: 'Super Foods', sans-serif;
+    background-color: lightgreen;
+    
+  }
+  .Status2
+  {
+    border: 2px solid transparent;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 141px;
+    bottom: 20px;
+    border-radius: 10px;
+    font-family: 'Super Foods', sans-serif;
+    background-color: lightgreen;
+  }
+  .PatratRoomuridisponibile
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .NumeChat
+  {
+    height: 100px;
+    width: 100%;
+    padding-top: 25%;
+    text-align: center;
+    font-family: 'Super Foods', sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+.ScrisAvalabile
+{
+  border: 2px solid transparent;
+padding-left: 25%;
+font-family: 'Super Foods', sans-serif;
+color: #546a74;
+margin: 10px;
+}
+.RoomuriDisponibile
+{
+  height: 70px;
+  width: 98%;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #546a74;
+}
+.NumeCamera
+{
+  height: 50%;
+  width: 99%;
+  border: 2px solid transparent;
+  font-family: 'Super Foods', sans-serif;
+  font-size: x-large;
+
+}
+.PersoaneOnline
+{
+  flex-grow: 1;
+  border: 2px solid transparent;
+  font-family: 'Super Foods', sans-serif;
+}
