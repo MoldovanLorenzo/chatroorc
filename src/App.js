@@ -1,14 +1,17 @@
-
-import './App.css';
+import React from 'react';
 import Homepage from './Components/Homepage';
 import Singup from './Components/Singup';
-import {BrowserRouter as Router, Route, Routes, BrowserRouter} from 'react-router-dom';
 import Chatroom from './Components/Chatroom';
-import Rute from './Routes/Routes';
+import { Route,Routes} from 'react-router-dom';
 
 function App() {
   return (
-  <Chatroom />
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="singup" element={<Singup />}/>
+      <Route path="chatroom" element={<Chatroom />} />
+    </Routes>
+    
   );
 }
 

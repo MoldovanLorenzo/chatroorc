@@ -70,6 +70,10 @@
     top:300px;
     font-family: "Comic Sans MS", cursive;
     border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
     
     
 }
