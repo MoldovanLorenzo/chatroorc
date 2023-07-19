@@ -17,11 +17,11 @@ function Homepage() {
         username,
         password
       });
-      if (response.data['login_result']=='SUCCESS') {
+      if (response.data['login_result']==='SUCCESS') {
         
         setIsLoggedIn(true);
       }
-      else if(response.data['login_result']=='FAILED USER/PSWRD'){
+      else if(response.data['login_result']==='FAILED USER/PSWRD'){
         setError(response.data['login_result']);//eroare User/password incorect
       }
       else {

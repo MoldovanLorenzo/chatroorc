@@ -19,7 +19,7 @@ function Singup() {
         password,
         nickname
       });
-      if (response.data['signup_result']=='SUCCESS') {
+      if (response.data['signup_result']==='SUCCESS') {
              //Aici fa redirect la homepage  
       } else {
         setError(response.data['signup_result']);
