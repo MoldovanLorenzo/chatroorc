@@ -11,18 +11,18 @@ function Singup() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const nickname = document.getElementById('nickname').value;
-    const poza = document.getElementById('poza').value;
+    
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.post('http://localhost:5000/signup_request', {
         username,
         password,
-        nickname,
-        poza
+        nickname
       });
-      if (response.data.success) {
+      if (response.data['signup_result']=='SUCCESS') {
+             //Aici fa redirect la homepage  
       } else {
-        setError(response.data.error);
+        setError(response.data['signup_result']);
       }
     } catch (error) {
       console.log(error);
@@ -35,28 +35,23 @@ function Singup() {
         <div className='UssernameParola'>
         <div className='Ussername'>
   <form>
-    <input type='text' placeholder='Ussername' />
+    <input type='text' placeholder='Ussername' id='username' />
   </form>
 </div>
 
 <div className='Parola'>
   <form>
-    <input type='text' placeholder='Parola' />
+    <input type='text' placeholder='Parola' id='password'/>
   </form>
 </div>
         </div>
         <div className='NicknamePoza'>
         <div className='Nickname'>
   <form>
-    <input type='text' placeholder='Nickname' />
+    <input type='text' placeholder='Nickname' id='nickname' />
   </form>
 </div>
 
-<div className='Poza'>
-  <form>
-    <input type='file' placeholder='Poza' />
-  </form>
-</div>
         </div>
 
     </div>

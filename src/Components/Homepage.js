@@ -15,15 +15,19 @@ function Homepage() {
     const password = document.getElementById('password').value;
 
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post('http://localhost:5000/login_request', {
         username,
         password
       });
-      if (response.data.success) {
+      if (response.data['login_result']=='SUCCESS') {
+        
         setIsLoggedIn(true);
       }
+      else if(response.data['login_result']=='FAILED USER/PSWRD'){
+        setError(response.data['login_result']);//eroare User/password incorect
+      }
       else {
-        setError(response.data.error);
+        setError(response.data['login_result']);//eroare unknown
       }
     } catch (error) {
       console.log(error);
