@@ -1,14 +1,12 @@
-import React, { useState,} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Poza from '../Assets/pozarct3.png';
 import '../Styles/Homepage.css';
 import { Link } from 'react-router-dom';
- 
-function Homepage() {
 
+function Homepage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState('');
-
 
   const handleLogin = async () => {
     const username = document.getElementById('username').value;
@@ -21,8 +19,7 @@ function Homepage() {
       });
       if (response.data.success) {
         setIsLoggedIn(true);
-      }
-      else {
+      } else {
         setError(response.data.error);
       }
     } catch (error) {
@@ -30,6 +27,13 @@ function Homepage() {
       setError('The account is not created.');
     }
   };
+
+  const handleLinkClick = () => {
+    if (!isLoggedIn) {
+      handleLogin();
+    }
+  };
+
   return (
     <div className='PatratHome'>
       <div className='ParteaStanga'>
@@ -42,13 +46,14 @@ function Homepage() {
           <input type="password" id="password" required />
           <label htmlFor="password">Password</label>
         </div>
-        {isLoggedIn ? (
-  <Link to="/chatroom" className='LinkTrimitereChat hoverLink'>Log in</Link>
-) : (
-  <button className='LinkTrimitereChat hoverLink' onClick={handleLogin}>Log in</button>
-)}
- {error && <p>{error}</p>}
-
+        <Link
+          to={isLoggedIn ? '/chatroom' : ''}
+          className='LinkTrimitereChat hoverLink'
+          onClick={handleLinkClick}
+        >
+          Log in
+        </Link>
+        {error && <p>{error}</p>}
         <h2 className='h2nume'>Don't Have an Account?</h2>
         <Link to="/singup" id='buton2' className='CustonSinguplink'>Sign up</Link>
       </div>
