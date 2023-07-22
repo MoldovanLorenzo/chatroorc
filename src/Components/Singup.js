@@ -3,6 +3,7 @@ import '../Styles/Singup.css';
 import { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Imga from '../Assets/pozasingup.png';
 
 function Singup() {
   const [error, setError] = useState('');
@@ -20,7 +21,6 @@ function Singup() {
         nickname
       });
       if (response.data['signup_result']==='SUCCESS') {
-             //Aici fa redirect la homepage  
       } else {
         setError(response.data['signup_result']);
       }
@@ -32,7 +32,11 @@ function Singup() {
 
   return (
     <div className='PatratSingup'>
-      <Link to="/" className='ButonoSingup' onClick={handleSignup}>Sign up</Link>
+      <div className='PatratPoza'>
+      <img src={Imga} alt='poza' className='ImgSgn' />
+      </div>
+      <div className='PatratDate'>
+        <h1 className='Titlu'>Create An Account</h1>
       <div className='UssernameParola'>
         <div className='Ussername'>
   <form>
@@ -42,7 +46,7 @@ function Singup() {
 
 <div className='Parola'>
   <form>
-    <input type='text' placeholder='Parola' />
+    <input type='text' placeholder='Password' />
   </form>
 </div>
         </div>
@@ -52,15 +56,11 @@ function Singup() {
     <input type='text' placeholder='Nickname' />
   </form>
 </div>
-
-<div className='Poza'>
-  <form>
-    <input type='file' placeholder='Poza' />
-  </form>
 </div>
-        </div>
-
-    </div>
+<Link to="/" className='ButonoSingup' onClick={handleSignup}>Sing up</Link>
+  </div>
+  
+      </div>
   );
 }
 

@@ -3,8 +3,7 @@
     width: 1200px;
     height: 800px;
     border: 2px solid transparent;
-    border-radius: 20px;
-    background-color: white;
+    background-color: #48C9B0;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -26,10 +25,6 @@
   width: 100%;
 }
 
-.Parola,
-.Poza {
-  margin-top: auto;
-}
 .Ussername,
 .Parola,
 .Nickname,
@@ -41,8 +36,7 @@
 
 .Ussername form,
 .Parola form,
-.Nickname form,
-.Poza form {
+.Nickname form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,32 +46,56 @@
 
 .Ussername input,
 .Parola input,
-.Nickname input,
-.Poza input {
+.Nickname input {
   width: 80%;
   padding: 8px;
-  border-color: transparent;
+  border-color: black;
   font-family: "Comic Sans MS", cursive;
+  border-radius: 10px;
+  background-color: #48C9B0;
 }
 .ButonoSingup
 {
-    height: 40px;
-    width: 150px;
+    height: 20px;
+    width:90px;
     background-color:#d4efea;
     border: 2px solid transparent;
-    position: relative;
-    left: 560px;
-    top:300px;
     font-family: "Comic Sans MS", cursive;
-    border-radius: 20px;
     text-align: center;
     align-items: center;
     text-decoration: none;
+    border-radius: 10px;
     color: black;
+    padding-bottom: 5px;
     
     
 }
+.PatratDate
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 
-
-      
-      
+}
+.PatratPoza
+{
+  width: 50%;
+  height: 100%;
+}
+.ImgSgn
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: 197px;
+  border-radius: 0%;
+  bottom: 1px;  
+}
+      .Titlu
+      {
+        color: white;
+        position: relative;
+        font-family: "Comic Sans MS", cursive;
+      }

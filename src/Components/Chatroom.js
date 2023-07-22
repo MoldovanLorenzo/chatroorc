@@ -1,7 +1,33 @@
 import React from 'react'
 import '../Styles/Chatroom.css'
+import { useState } from 'react';
+import axios from 'axios';
+
 
 function Chatroom() {
+
+  const [message, setMessage] = useState('');
+  const [messages, setMessages] = useState([]);
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:5000/api/send-message', {
+        message,
+      });
+
+      if (response.data.success) {
+        setMessages((prevMessages) => [...prevMessages, message]);
+        setMessage('');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className='PatratTot'>
       <div className='PatratRoomuridisponibile'>
@@ -25,11 +51,18 @@ function Chatroom() {
   </div>
 </div>
 </div>
-        </div>
+    </div>
         <div className='Formchat'>
-        <form>
-  <input type="text" id="input-text" name="input-text" placeholder="Mesaj..." />
-</form>
+        <form onSubmit={handleSubmit}>
+          <input
+            type='text'
+            id='input-text'
+            name='input-text'
+            placeholder='Mesaj...'
+            value={message}
+            onChange={handleChange}
+          />
+        </form>
         </div>
     </div>
     <div className='UseriIntrati'>
@@ -58,7 +91,7 @@ function Chatroom() {
     </div>
   </div>
 
-  )
+  );
 }
 
 export default Chatroom
