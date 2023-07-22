@@ -22,10 +22,10 @@ function Homepage() {
         setIsLoggedIn(true);
       }
       else if(response.data['login_result']==='FAILED USER/PSWRD'){
-        setError(response.data['login_result']);//eroare User/password incorect
+        setError(response.data['login_result']);
       }
       else {
-        setError(response.data['login_result']);//eroare unknown
+        setError(response.data['login_result']);
       }
     } catch (error) {
       console.log(error);
